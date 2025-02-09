@@ -27,8 +27,6 @@ export default class Game {
         this.objetsGraphiques.push(this.player);
 
         // Un objert qui suite la souris, juste pour tester
-        this.objetSouris = new ObjetSouris(200, 200, 25, 25, "orange");
-        this.objetsGraphiques.push(this.objetSouris);
 
 
         // On cree deux obstacles
@@ -91,8 +89,6 @@ export default class Game {
         // on met à jouer la position de objetSouris avec la position de la souris
         // Pour un objet qui "suit" la souris mais avec un temps de retard, voir l'exemple
         // du projet "charQuiTire" dans le dossier COURS
-        this.objetSouris.x = this.inputStates.mouseX;
-        this.objetSouris.y = this.inputStates.mouseY;
 
         // On regarde si le joueur a atteint la sortie
         // TODO
