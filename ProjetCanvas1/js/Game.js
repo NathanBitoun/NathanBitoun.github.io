@@ -22,6 +22,7 @@ export default class Game {
 
     async init(canvas) {
         this.ctx = this.canvas.getContext("2d");
+        this.ctx.scale(0.8,0.8);
 
         this.player = new Player(this.beginX, this.beginY);
         this.objetsGraphiques.push(this.player);
