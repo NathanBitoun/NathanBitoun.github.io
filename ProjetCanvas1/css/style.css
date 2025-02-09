@@ -3,9 +3,9 @@
     background-color: lightgrey;
     transform: scale(0.67);
     transform-origin: top left;
+    margin:0;
 }
 
 body {
-    max-width: 1950px;
-    max-height: 850px;
+   margin: 0;
 }
