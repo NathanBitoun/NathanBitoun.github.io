@@ -4,6 +4,12 @@ import Game from "./Game.js";
 // que la page est prête, que le DOM est chargé, etc.
 window.onload = init;
 
+window.addEventListener("keydown", function(event) {
+    if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key)) {
+        event.preventDefault();
+    }
+});
+
 async function init() {
    // On recupère le canvas
    let canvas = document.querySelector("#myCanvas");
